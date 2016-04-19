@@ -4,7 +4,7 @@ For those who are suffering from SQLPLUS inability to provide history using keyb
 
 ### Running image
 ```sh 
-$ docker run -d --name oracle --privileged absolut/oracle-12c-ee
+$ docker run -d --name oracle --privileged absolutapps/oracle-12c-ee
 ```
 This will create a default database and run oracle inside docker container.
 Oracle should be run in “privileged” mode as oracle requires special ports and kernel settings to be enabled
@@ -12,7 +12,7 @@ However in real environment it's better to use more comprehensive statement usef
 ```sh
 $ docker run -d --name oracle \
   --privileged -v $(pwd)/oradata:/u01/app/oracle \
-  -p 8080:8080 -p 1521:1521 absolut/oracle-12c-ee 
+  -p 8080:8080 -p 1521:1521 absolutapps/oracle-12c-ee 
 ```
 In this case database settings and data will be saved to $(pwd)/oradata folder and ports will be exposed either to localhost or boot2docker container (MacOs and Win). 
 
