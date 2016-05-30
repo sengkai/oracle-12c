@@ -2,6 +2,7 @@ FROM absolutapps/oracle-12c-ee-base
 
 ENV INIT_MEM_PST 40
 ENV SW_ONLY false
+ENV TERM dumb
 
 ADD entrypoint.sh /entrypoint.sh
 
