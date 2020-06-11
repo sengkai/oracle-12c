@@ -7,7 +7,7 @@ ENV TERM dumb
 ADD entrypoint.sh /entrypoint.sh
 
 EXPOSE 1521
-EXPOSE 8080
+EXPOSE 8086
 EXPOSE 5500
 
 VOLUME ["/u01/app/oracle"]

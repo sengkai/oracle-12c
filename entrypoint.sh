@@ -104,7 +104,7 @@ case "$1" in
                  	fi 
                  	echo "Setting HTTP port to 8080"
                  	set_http_port
-                 	echo "Please login to http://<ip_address>:8080/em to use enterprise manager"
+                 	echo "Please login to http://<ip_address>:8086/em to use enterprise manager"
                  	echo "User: sys; Password oracle; Sysdba: true" 
                 fi 
 		
